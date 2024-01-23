@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind and daisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--googlefont Manrope-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <div class="container  mx-auto lg:mt-12 sm:mt-5 navbar font-manrope bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a> <span class="text-red-500">Home</span> </a></li>
+                        <li><a>About</a></li>
+                        <li><a>pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <h1 class=" lg:text-3xl  font-extrabold">Hockey<span class="text-red-500">’</span>s</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a> <span class="text-red-500">Home</span> </a></li>
+                    <li><a>About</a></li>
+                    <li><a>pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end lg:gap-6 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+
+                <a class="btn  px-6 py-4 bg-red-500 text-white ">Get Ticket</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto  sm:my-1 lg:my-12">
+        <div>
+            <div class="carousel  w-full">
+                <div id="slide1" class="carousel-item relative sm:bottom-8 w-full ">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white ">❯</a>
+                    </div>
+                    <div class="absolute   bg-zinc-900 text-white sm:p-4   lg:p-8 lg:space-y-4 lg:rounded-2xl lg:right-8 lg:bottom-8">
+                        <h3 class="text-white font-manrope sm:text-sm lg:text-xl font-extrabold">Get inspired by frontline heros</h3>
+                        <p class="font-manrope  lg:text-xs lg:text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
+                    </div> 
+                </div>
+                <div id="slide2" class="carousel-item relative w-full ">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white ">❯</a>
+                    </div>
+                    <div class="absolute bg-zinc-900 text-white p-8 space-y-4 rounded-2xl right-8 bottom-8">
+                        <h3 class="text-white font-manrope text-xl font-extrabold">Get inspired by frontline heros</h3>
+                        <p class="font-manrope text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
+                    </div> 
+                </div>
+                <div id="slide3" class="carousel-item relative w-full ">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide4" class="btn btn-circle  bg-black text-white ">❯</a>
+                    </div>
+                    <div class="absolute bg-zinc-900 text-white p-8 space-y-4 rounded-2xl right-8 bottom-8">
+                        <h3 class="text-white font-manrope text-xl font-extrabold">Get inspired by frontline heros</h3>
+                        <p class="font-manrope text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
+                    </div> 
+                </div>
+                <div id="slide4" class="carousel-item relative w-full  ">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white ">❯</a>
+                    </div>
+                    <div class="absolute bg-zinc-900 text-white p-8 space-y-4 rounded-2xl right-8 bottom-8">
+                        <h3 class="text-white font-manrope text-xl font-extrabold">Get inspired by frontline heros</h3>
+                        <p class="font-manrope text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--hokey club section-->
+    <div class="container mx-auto ">
+        <div class="justify-center items-center">
+            <h3 class=" font-manrope sm:text-sm lg:text-xl font-extrabold">Get inspired by frontline heros</h3>
+            <p class="font-manrope  lg:text-xs lg:text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
+        </div>
+        <div class="grid  lg:my-20 gap-5 lg:grid-cols-4 sm:grid-cols-1">
+        <div class="items-center text-center p-2 bg-slate-500 space-y-6">
+            <div class="radial-progress rotate-180  text-red-500" style="--value:87;" role="progressbar"><span class="rotate-180 text-black">87%</span></div>
+            <h3>Prayer Facility</h3>
+            <p>where seeds of courge bloom, meet the heros who till the soil</p>
+        </div>
+        <div class="items-center text-center p-2 bg-slate-500 space-y-6">
+            <div class="radial-progress rotate-180 text-green-500" style="--value:95;" role="progressbar"><span class="rotate-180 text-black">95%</span></div>
+            <h3>Prayer Facility</h3>
+            <p>where seeds of courge bloom, meet the heros who till the soil</p>
+        </div>
+        <div class="items-center text-center p-2 bg-slate-500 space-y-6">
+            <div class="radial-progress rotate-180 text-yellow-500" style="--value:90;" role="progressbar"><span class="rotate-180 text-black">90%</span></div>
+            <h3>Prayer Facility</h3>
+            <p>where seeds of courge bloom, meet the heros who till the soil</p>
+        </div>
+        <div class="items-center text-center p-2 bg-slate-200 space-y-6">
+            <div class="radial-progress rotate-180 text-blue-500" style="--value:80;" role="progressbar"><span class="rotate-180 text-black">80%</span></div>
+            <h3>Prayer Facility</h3>
+            <p>where seeds of courge bloom, meet the heros who till the soil</p>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
