@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
-        .font-manrope{
-            font-family: 'Manrope', sans-serif;
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+
+        }
+
+        .image {
+            width: 573px;
+            height: 338px;
+             background-image: url("./images/2.png"),
+                linear-gradient(180deg, black 5%, rgba(7, 2, 17, 0.00) 90%);
+            background-blend-mode: overlay;
+        }
+        .image2 {
+            width: 573px;
+            height: 338px;
+             background-image: url("./images/3.png"),
+                linear-gradient(180deg, black 5%, rgba(7, 2, 17, 0.00) 90%);
+            background-blend-mode: overlay;
+        }
+        .image3 {
+            width: 1024px;
+            height: 450px;
+             background-image: url("./images/4.png"),
+                linear-gradient(180deg, black 5%, rgba(7, 2, 17, 0.00) 90%);
+            background-blend-mode: overlay;
         }
     </style>
 
@@ -54,95 +77,573 @@
                 </ul>
             </div>
             <div class="navbar-end lg:gap-6 ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                    strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round"
-                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                </svg>
+                <div class="sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
 
                 <a class="btn  px-6 py-4 bg-red-500 text-white ">Get Ticket</a>
             </div>
         </div>
     </div>
     <div class="container mx-auto  sm:my-1 lg:my-12">
-        <div>
-            <div class="carousel  w-full">
-                <div id="slide1" class="carousel-item relative sm:bottom-8 w-full ">
-                    <img src="Images/1.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle  bg-black text-white ">❮</a>
-                        <a href="#slide2" class="btn btn-circle  bg-black text-white ">❯</a>
-                    </div>
-                    <div class="absolute   bg-zinc-900 text-white sm:p-4   lg:p-8 lg:space-y-4 lg:rounded-2xl lg:right-8 lg:bottom-8">
-                        <h3 class="text-white font-manrope sm:text-sm lg:text-xl font-extrabold">Get inspired by frontline heros</h3>
-                        <p class="font-manrope  lg:text-xs lg:text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
-                    </div> 
+        <div class="carousel relative w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white ">❮</a>
+                    <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full ">
-                    <img src="Images/2.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle  bg-black text-white ">❮</a>
-                        <a href="#slide3" class="btn btn-circle  bg-black text-white ">❯</a>
-                    </div>
-                    <div class="absolute bg-zinc-900 text-white p-8 space-y-4 rounded-2xl right-8 bottom-8">
-                        <h3 class="text-white font-manrope text-xl font-extrabold">Get inspired by frontline heros</h3>
-                        <p class="font-manrope text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
-                    </div> 
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle  bg-black text-white">❮</a>
+                    <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
                 </div>
-                <div id="slide3" class="carousel-item relative w-full ">
-                    <img src="Images/3.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle  bg-black text-white ">❮</a>
-                        <a href="#slide4" class="btn btn-circle  bg-black text-white ">❯</a>
-                    </div>
-                    <div class="absolute bg-zinc-900 text-white p-8 space-y-4 rounded-2xl right-8 bottom-8">
-                        <h3 class="text-white font-manrope text-xl font-extrabold">Get inspired by frontline heros</h3>
-                        <p class="font-manrope text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
-                    </div> 
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle  bg-black text-white">❮</a>
+                    <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
                 </div>
-                <div id="slide4" class="carousel-item relative w-full  ">
-                    <img src="Images/4.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle  bg-black text-white ">❮</a>
-                        <a href="#slide1" class="btn btn-circle  bg-black text-white ">❯</a>
-                    </div>
-                    <div class="absolute bg-zinc-900 text-white p-8 space-y-4 rounded-2xl right-8 bottom-8">
-                        <h3 class="text-white font-manrope text-xl font-extrabold">Get inspired by frontline heros</h3>
-                        <p class="font-manrope text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
-                    </div> 
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="images/4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle  bg-black text-white">❮</a>
+                    <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
                 </div>
             </div>
         </div>
+        <div
+            class=" p-4 w-full text-center lg:p-8  lg:w-1/3 rounded-2xl absolute lg:-translate-y-40 lg:translate-x-6 bg-black text-white  ">
+            <h3 class=" font-manrope text-base font-light lg:text-4xl lg:font-extrabold">Get inspired by frontline heros
+            </h3>
+            <p class="font-manrope text-sm font-light  lg:text-base  lg:font-medium">where seeds of courge bloom, meet
+                the heros
+                who till the soil</p>
+
+        </div>
     </div>
     <!--hokey club section-->
-    <div class="container mx-auto ">
-        <div class="justify-center items-center">
-            <h3 class=" font-manrope sm:text-sm lg:text-xl font-extrabold">Get inspired by frontline heros</h3>
-            <p class="font-manrope  lg:text-xs lg:text-base font-medium">where seeds of courge bloom, meet the heros who till the soil</p>
+    <section>
+        <div class="container mx-auto  my-20  ">
+            <div class="justify-center py-6 px-24 space-y-6  items-center text-center">
+                <h3 class=" font-manrope sm:text-sm lg:text-4xl font-extrabold">Get inspired by frontline heros</h3>
+                <p class="font-manrope  lg:text-xs text-base font-medium">where seeds of courge bloom, meet the heros
+                    who till the soil</p>
+            </div>
+            <div class="grid  lg:my-20 gap-5 lg:grid-cols-4 sm:grid-cols-1">
+                <div class="items-center text-center p-2 space-y-6">
+                    <div class="radial-progress rotate-180  text-red-500" style="--value:87;" role="progressbar"><span
+                            class="rotate-180 text-black">87%</span></div>
+                    <h3>Player Facility</h3>
+                    <p>where seeds of courge bloom, meet the heros who till the soil</p>
+                </div>
+                <div class="items-center text-center p-2 space-y-6">
+                    <div class="radial-progress rotate-180 text-green-500" style="--value:95;" role="progressbar"><span
+                            class="rotate-180 text-black">95%</span></div>
+                    <h3>Experienced Coach</h3>
+                    <p>where seeds of courge bloom, meet the heros who till the soil</p>
+                </div>
+                <div class="items-center text-center p-2 space-y-6">
+                    <div class="radial-progress rotate-180 text-yellow-500" style="--value:90;" role="progressbar"><span
+                            class="rotate-180 text-black">90%</span></div>
+                    <h3>senior coach</h3>
+                    <p>where seeds of courge bloom, meet the heros who till the soil</p>
+                </div>
+                <div class="items-center text-center p-2 space-y-6">
+                    <div class="radial-progress rotate-180 text-blue-500" style="--value:80;" role="progressbar"><span
+                            class="rotate-180 text-black">80%</span></div>
+                    <h3>senior player</h3>
+                    <p>where seeds of courge bloom, meet the heros who till the soil</p>
+                </div>
+            </div>
         </div>
-        <div class="grid  lg:my-20 gap-5 lg:grid-cols-4 sm:grid-cols-1">
-        <div class="items-center text-center p-2 bg-slate-500 space-y-6">
-            <div class="radial-progress rotate-180  text-red-500" style="--value:87;" role="progressbar"><span class="rotate-180 text-black">87%</span></div>
-            <h3>Prayer Facility</h3>
-            <p>where seeds of courge bloom, meet the heros who till the soil</p>
+    </section>
+    <!--Program Sections-->
+    <section>
+        <div class="container mx-auto my-20">
+            <div class="justify-center py-6 px-24 space-y-6  items-center text-center">
+                <h3 class=" font-manrope sm:text-sm lg:text-4xl font-extrabold">Program Sections</h3>
+                <p class="font-manrope  lg:text-xl text-base font-medium">where seeds of courge bloom, meet the heros
+                    who till the soil</p>
+            </div>
+            <hr class="">
+            <div class="grid lg:grid-cols-2 px-10 grid-rows-2 rounded-2xl place-items-stretch">
+                <div class="  px-10 bg-no-repeat space-y-4 text-white image  text-left" >
+                    <h3 class=" font-manrope pt-24 sm:text-sm lg:text-4xl font-extrabold">Program Sections</h3>
+                    <p class="font-manrope  lg:text-xl text-base font-medium">where seeds of courge bloom, meet the
+                        heros
+                        who till the soil</p>
+                    <button class="bg-red-500  px-4 py-5 rounded-lg text-xl font-bold"> Register Now!</button>
+    
+                </div>
+                <div class=" px-10 bg-no-repeat space-y-4 rounded-2xl  text-white image2 text-left">
+                    <h3 class=" font-manrope   pt-24 sm:text-sm lg:text-4xl font-extrabold">Program Sections</h3>
+                    <p class="font-manrope  lg:text-xl text-base font-medium">where seeds of courge bloom, meet the
+                        heros
+                        who till the soil</p>
+                    <button class="bg-red-500  px-4 py-5 rounded-lg text-xl font-bold"> Register Now!</button>
+                </div>
+                <div class="row-span-2 px-10 image3 space-y-4 rounded-2xl text-white text-left">
+                    <h3 class=" font-manrope pt-24 sm:text-sm lg:text-4xl font-extrabold">Program Sections</h3>
+                    <p class="font-manrope  lg:text-xl text-base font-medium">where seeds of courge bloom, meet the
+                        heros
+                        who till the soil</p>
+                    <button class="bg-red-500 px-4 py-5 rounded-lg text-xl font-bold"> Register Now!</button>
+                </div>
+            </div>
         </div>
-        <div class="items-center text-center p-2 bg-slate-500 space-y-6">
-            <div class="radial-progress rotate-180 text-green-500" style="--value:95;" role="progressbar"><span class="rotate-180 text-black">95%</span></div>
-            <h3>Prayer Facility</h3>
-            <p>where seeds of courge bloom, meet the heros who till the soil</p>
+
+    </section>
+    <!--Our New Products-->
+    <div class="container mx-auto mt-20">
+        <div class="justify-center py-6 px-24 space-y-6  items-center text-center">
+            <h3 class=" font-manrope sm:text-sm lg:text-4xl font-extrabold">Our New Products</h3>
+            <p class="font-manrope  lg:text-xl text-base font-medium">You can get ourr New Products here</p>
         </div>
-        <div class="items-center text-center p-2 bg-slate-500 space-y-6">
-            <div class="radial-progress rotate-180 text-yellow-500" style="--value:90;" role="progressbar"><span class="rotate-180 text-black">90%</span></div>
-            <h3>Prayer Facility</h3>
-            <p>where seeds of courge bloom, meet the heros who till the soil</p>
-        </div>
-        <div class="items-center text-center p-2 bg-slate-200 space-y-6">
-            <div class="radial-progress rotate-180 text-blue-500" style="--value:80;" role="progressbar"><span class="rotate-180 text-black">80%</span></div>
-            <h3>Prayer Facility</h3>
-            <p>where seeds of courge bloom, meet the heros who till the soil</p>
-        </div>
+        <div class="grid   lg:grid-cols-2 grid-rows-3 space-x-3 space-y-3 ">
+            <div class="card card-side bg-base-100 shadow-xl ">
+                <div>
+                    <figure><img src="images/10.png" alt="" /></figure>
+                </div>
+                <div class="card-body">
+                    <div class="flex gap-4">
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 24 24" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                            </svg>
+                            <p>5.0</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                <path fill-rule="evenodd"
+                                    d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p>20</p>
+
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="white" stroke-width="" stroke="currentColor" className="w-6 h-6">
+                                <path
+                                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                            </svg>
+                            <p>200</p>
+
+                        </div>
+                    </div>
+
+                    <h2 class="card-title">World Cup Flags Football</h2>
+                    <p>Click the button to get thw latest Football.</p>
+                    <div class="flex justify-between">
+                        <p class="text-red-500">Price - $22.00</p>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>
+                            <p>Delivery Fee : Free</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl p">
+                <figure><img src="images/5.png" alt="Movie" /></figure>
+                <div class="card-body">
+                    <div class="flex gap-4">
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 24 24" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                            </svg>
+                            <p>5.0</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                <path fill-rule="evenodd"
+                                    d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p>20</p>
+
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="white" stroke-width="" stroke="currentColor" className="w-6 h-6">
+                                <path
+                                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                            </svg>
+                            <p>200</p>
+
+                        </div>
+                    </div>
+
+                    <h2 class="card-title">Jersey</h2>
+                    <p>Click the button to get the new Jersey</p>
+                    <div class="flex justify-between">
+                        <p class="text-red-500">Price - $22.00</p>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>
+                            <p>Delivery Fee : Free</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="images/6.png" alt="Movie" /></figure>
+                <div class="card-body">
+                    <div class="flex gap-4">
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 24 24" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                            </svg>
+                            <p>5.0</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                <path fill-rule="evenodd"
+                                    d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p>20</p>
+
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="white" stroke-width="" stroke="currentColor" className="w-6 h-6">
+                                <path
+                                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                            </svg>
+                            <p>200</p>
+
+                        </div>
+                    </div>
+
+                    <h2 class="card-title">world Cup new Football </h2>
+                    <p>Click the button to get new Football.</p>
+                    <div class="flex justify-between">
+                        <p class="text-red-500">Price - $22.00</p>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>
+                            <p>Delivery Fee : Free</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="images/8.png" alt="Movie" /></figure>
+                <div class="card-body">
+                    <div class="flex gap-4">
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 24 24" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                            </svg>
+                            <p>5.0</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                <path fill-rule="evenodd"
+                                    d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p>20</p>
+
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="white" stroke-width="" stroke="currentColor" className="w-6 h-6">
+                                <path
+                                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                            </svg>
+                            <p>200</p>
+
+                        </div>
+                    </div>
+
+                    <h2 class="card-title">World Cup New cap!<caption></caption>
+                    </h2>
+                    <p>Click the button to get the latest Cap.</p>
+                    <div class="flex justify-between">
+                        <p class="text-red-500">Price - $22.00</p>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>
+                            <p>Delivery Fee : Free</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="Images/8.png" alt="Movie" /></figure>
+                <div class="card-body">
+                    <div class="flex gap-4">
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 24 24" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                            </svg>
+                            <p>5.0</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                <path fill-rule="evenodd"
+                                    d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p>20</p>
+
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="white" stroke-width="" stroke="currentColor" className="w-6 h-6">
+                                <path
+                                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                            </svg>
+                            <p>200</p>
+
+                        </div>
+                    </div>
+
+                    <h2 class="card-title">world Cup new Football</h2>
+                    <p>Click the button to get the football.</p>
+                    <div class="flex justify-between">
+                        <p class="text-red-500">Price - $22.00</p>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>
+                            <p>Delivery Fee : Free</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="images/9.png" alt="Movie" /></figure>
+                <div class="card-body">
+                    <div class="flex gap-4">
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 24 24" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                            </svg>
+                            <p>5.0</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke-width=".25"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                <path fill-rule="evenodd"
+                                    d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p>20</p>
+
+                        </div>
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="white" stroke-width="" stroke="currentColor" className="w-6 h-6">
+                                <path
+                                    d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                            </svg>
+                            <p>200</p>
+
+                        </div>
+                    </div>
+
+                    <h2 class="card-title">Hockey Helmet</h2>
+                    <p>Click the button to get the hockey helmet.</p>
+                    <div class="flex justify-between">
+                        <p class="text-red-500">Price - $22.00</p>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path
+                                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                            </svg>
+                            <p>Delivery Fee : Free</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+    <section>
+
+    </section>
+    <!--Clients Question section-->
+    <section>
+        <div class="container mx-auto my-20">
+            <div class="justify-center py-6 px-24 space-y-6  items-center text-center">
+                <h3 class=" font-manrope  lg:text-4xl font-extrabold">Clients Question</h3>
+                <p class="font-manrope sm:text-sm lg:text-xl text-base font-medium">where seeds of courge bloom, meet
+                    the heros
+                    who till the soil</p>
+            </div>
+
+            <div class="hero-content justify-between  flex-col lg:flex-row">
+                <div class="sm:w-1/2">
+                    <img src="images/11.png" alt="">
+                </div>
+
+                <div class="font-manrope w-full ">
+                    <div class="collapse collapse-plus  join-item border border-base-300 ">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p>We provide our best Enquipment. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus join-item border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>We provide our best Trainer.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus join-item border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>Yes! You can get private lesson from our trainer</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus join-item border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>We have essential equipment for ski touring</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus join-item border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title  text-xl font-bold">
+                            Booking </div>
+                        <div class="collapse-content">
+                            <p>You can get ticket or you can call our phone number</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
 </body>
+<footer class="footer py-10  bg-black text-base-content font-manrope">
+    <div class="footer container mx-auto text-white">
+        <aside>
+            <div class="sm:justify-between sm:items-center text-center space-y-2"">
+            <h1 class=" lg:text-3xl font-extrabold">Get in Touch</h1>
+                <p class="font-manrope  lg:text-xs text-base font-medium">where seeds of courge bloom, meet the heros
+                    who till the soil</p>
+                <div class="flex gap-4 justify-center items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75"
+                            stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class=" lg:text-xl font-medium">hockeys@support.com</h4>
+                </div>
+                <div class="flex gap-4 justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path fillRule="evenodd"
+                            d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                            stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            clipRule="evenodd" />
+                    </svg>
+                    <h1 class=" lg:text-xl  font-medium">(+62) 123-321-543</h1>
+
+
+                </div>
+            </div>
+        </aside>
+        <div class="footer grid grid-cols-2  gap-3 my-10 mx-10 ">
+            <div>
+
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legels Notice</a>
+            </div>
+            <div>
+
+                <header class="footer-title">Support</header>
+                <a class="link link-hover">Help center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">TIcket support</a>
+                <a class="link link-hover">Contact Us</a>
+
+            </div>
+            <div>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Academy</a>
+                <a class="link link-hover">Group Lesson</a>
+                <a class="link link-hover">Private Lesson</a>
+                <a class="link link-hover">For Kids</a>
+                <a class="link link-hover">For Adults</a>
+            </div>
+            </nav>
+        </div>
+    </div>
+</footer>
 
 </html>
